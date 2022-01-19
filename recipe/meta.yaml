@@ -19,17 +19,19 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.5
     - setuptools
     - pyyaml
+    - poetry
 
   run:
-    - python
+    - python >=3.5
     - jsonschema
     - six
     - setuptools
     - pyyaml
     - pathlib2
+    - openapi-schema-validator
 
 test:
   imports:
