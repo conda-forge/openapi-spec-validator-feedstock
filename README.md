@@ -7,9 +7,13 @@ Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openapi-spec-validator-feedstock/blob/master/LICENSE.txt)
 
-Summary: OpenAPI Spec validator
+Summary: OpenAPI 2.0 (aka Swagger) and OpenAPI 3.0 spec validator
 
 Development: https://github.com/p1c2u/openapi-spec-validator
+
+OpenAPI Spec Validator is a Python library that validates OpenAPI Specs
+against the OpenAPI 2.0 (aka Swagger) and OpenAPI 3.0 specification. The
+validator aims to check for full compliance with the Specification.
 
 Current build status
 ====================
@@ -118,5 +122,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@bollwyvl](https://github.com/bollwyvl/)
 * [@rvalieris](https://github.com/rvalieris/)
 
