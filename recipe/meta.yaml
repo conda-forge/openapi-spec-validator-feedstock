@@ -38,7 +38,6 @@ test:
     - openapi_spec_validator
   commands:
     - pip check
-    - openapi-spec-validator --version
     - openapi-spec-validator --help
 
 about:
