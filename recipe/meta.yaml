@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: openapi-spec-validator
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/o/openapi-spec-validator/openapi-spec-validator-{{ version }}.tar.gz
-  sha256: 97f258850afc97b048f7c2653855e0f88fa66ac103c2be5077c7960aca2ad49a
+  sha256: 8026cd5c11a1556d4cdec56134c2ab8b64b588c10c9210d36a173b752291ad0d
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - openapi-spec-validator = openapi_spec_validator.__main__:main
@@ -22,11 +22,14 @@ requirements:
     - python >=3.7
 
   run:
-    - jsonschema >=3.2.0,<5.0.0
-    - openapi-schema-validator >=0.2.0,<0.3.0
+    # keep in sync with the poetry-generated setup.py
+    - importlib_resources >=5.8.0,<6.0.0
+    - jsonschema >=4.0.0,<5.0.0
+    - jsonschema-spec >=0.1.1,<0.2.0
+    - lazy-object-proxy >=1.7.1,<2.0.0
+    - openapi-schema-validator >=0.3.2,<0.4.0
     - python >=3.7
     - pyyaml >=5.1
-    - setuptools
 
 test:
   requires:
@@ -40,7 +43,7 @@ test:
 about:
   home: https://github.com/p1c2u/openapi-spec-validator
   license: Apache-2.0
-  summary: OpenAPI 2.0 (aka Swagger) and OpenAPI 3.0 spec validator
+  summary: OpenAPI 2.0 (aka Swagger) and OpenAPI 3 spec validator
   license_family: APACHE
   license_file: LICENSE
   dev_url: https://github.com/p1c2u/openapi-spec-validator
