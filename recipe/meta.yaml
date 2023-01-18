@@ -1,12 +1,12 @@
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 
 package:
   name: openapi-spec-validator
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/o/openapi-spec-validator/openapi-spec-validator-{{ version }}.tar.gz
-  sha256: 8248634bad1f23cac5d5a34e193ab36e23914057ca69e91a1ede5af75552c465
+  url: https://pypi.io/packages/source/o/openapi-spec-validator/openapi_spec_validator-{{ version }}.tar.gz
+  sha256: ebed7f1c567780859402ad64b128e17f519d15f605f1b41d1e9a4a7a1690be07
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - jsonschema >=4.0.0,<5.0.0
     - jsonschema-spec >=0.1.1,<0.2.0
     - lazy-object-proxy >=1.7.1,<2.0.0
-    - openapi-schema-validator >=0.3.2,<0.4.0
+    - openapi-schema-validator >=0.3.2,<0.5
     - python >=3.7
     - pyyaml >=5.1
 
