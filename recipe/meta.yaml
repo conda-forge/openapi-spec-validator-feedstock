@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 package:
   name: openapi-spec-validator
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/o/openapi-spec-validator/openapi_spec_validator-{{ version }}.tar.gz
-  sha256: 03e8cbff36e1cab573e0e2fb51eff3d677f88aba33985d0fffe8753512595f1c
+  sha256: 8577b85a8268685da6f8aa30990b83b7960d4d1117e901d451b5d572605e5ec7
 
 build:
   noarch: python
@@ -25,7 +25,7 @@ requirements:
     # keep in sync with the poetry-generated setup.py
     - importlib_resources >=5.8,<7.0
     - jsonschema >=4.18.0,<5.0.0
-    - jsonschema-spec >=0.2.3,<0.3.0
+    - jsonschema-path >=0.3.1,<0.4.0
     - lazy-object-proxy >=1.7.1,<2.0.0
     - openapi-schema-validator >=0.6.0,<0.7.0
     - python >=3.8.0
