@@ -1,4 +1,4 @@
-{% set version = "0.7.1" %}
+{% set version = "0.7.2" %}
 
 package:
   name: openapi-spec-validator
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/o/openapi-spec-validator/openapi_spec_validator-{{ version }}.tar.gz
-  sha256: 8577b85a8268685da6f8aa30990b83b7960d4d1117e901d451b5d572605e5ec7
+  sha256: cc029309b5c5dbc7859df0372d55e9d1ff43e96d678b9ba087f7c56fc586f734
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   entry_points:
     - openapi-spec-validator = openapi_spec_validator.__main__:main
