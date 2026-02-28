@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.8.2"
+  version: "0.8.3"
   python_check_max: "3.14"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/o/openapi-spec-validator/openapi_spec_validator-${{ version }}.tar.gz
-  sha256: f12c9fe77d78ea0a04fe931573cfe4b86478db12f09f7f3a08a41da59b005458
+  sha256: 405113a18c262bbf5090340cdcd7148bccde71b968fbf5186fe034e3873b5fb8
 
 build:
   number: 0
