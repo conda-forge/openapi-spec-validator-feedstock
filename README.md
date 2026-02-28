@@ -9,7 +9,7 @@ Package license: Apache-2.0
 
 Summary: OpenAPI 2.0 (aka Swagger) and OpenAPI 3 spec validator
 
-Development: https://github.com/p1c2u/openapi-spec-validator
+Development: https://github.com/python-openapi/openapi-spec-validator
 
 OpenAPI Spec Validator is a Python library that validates OpenAPI Specs
 against the OpenAPI 2.0 (aka Swagger) and OpenAPI 3.0 specification. The
