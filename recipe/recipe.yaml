@@ -30,7 +30,7 @@ requirements:
     - jsonschema >=4.24.0,<4.25.0
     - jsonschema-path >=0.4.2,<0.5.0
     - lazy-object-proxy >=1.7.1,<2.0
-    - openapi-schema-validator >=0.7.0,<0.8.0
+    - openapi-schema-validator >=0.7.3,<0.8.0
     - python >=${{ python_min }}
 
 tests:
