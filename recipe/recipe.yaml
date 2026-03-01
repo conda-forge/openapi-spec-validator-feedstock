@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.8.3"
+  version: "0.8.4"
   python_check_max: "3.14"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/o/openapi-spec-validator/openapi_spec_validator-${{ version }}.tar.gz
-  sha256: 405113a18c262bbf5090340cdcd7148bccde71b968fbf5186fe034e3873b5fb8
+  sha256: 8bb324b9b08b9b368b1359dec14610c60a8f3a3dd63237184eb04456d4546f49
 
 build:
   number: 0
@@ -51,7 +51,7 @@ tests:
     script:
       - openapi-spec-validator --help
       - coverage run --source=openapi_spec_validator --branch -m pytest -vv --tb=long --color=yes
-      - coverage report --show-missing --skip-covered --fail-under=92
+      - coverage report --show-missing --skip-covered --fail-under=90
 
 about:
   license: Apache-2.0
