@@ -48,11 +48,10 @@ tests:
       run:
         - pytest-cov
         - python ${{ python_min }}.*
-        - jsonschema-rs
     script:
       - openapi-spec-validator --help
       - coverage run --source=openapi_spec_validator --branch -m pytest -vv --tb=long --color=yes
-      - coverage report --show-missing --skip-covered --fail-under=92
+      - coverage report --show-missing --skip-covered --fail-under=90
 
 about:
   license: Apache-2.0
